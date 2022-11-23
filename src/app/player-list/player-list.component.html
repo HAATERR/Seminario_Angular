@@ -1,0 +1,10 @@
+<main>
+<div class="card mt-5 d-flex justify-content-center" style="width: 18rem;" *ngFor = "let player of players" [ngClass] = "{'clearance' : player.clearance}">
+    <img [src]="player.image" [alt]= "player.name" class="image" >
+    <div class="card-body">
+      <h5 class="card-title">{{player.name}}</h5>
+      <p class="card-text">{{player.team}}.</p>
+      <button class="btn btn-primary" (click)="(player)">Seguir</button>
+    </div>
+  </div>
+</main>
