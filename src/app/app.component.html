@@ -14,7 +14,7 @@
             <a [routerLink]="['/players']" class="nav-link">Jugadores</a>
           </li>
           <li class="nav-item">
-            <a [routerLink]="['/follows']" class="nav-link">Follows</a>
+            <a [routerLink]="['/history']" class="nav-link">Historia</a>
           </li>
         </ul>
       </div>
@@ -23,8 +23,4 @@
   <div class="container">
     <router-outlet></router-outlet>
   </div>
-  
-  <h1>{{title}}</h1>
-  
-  
-  <footer>@Copyright {{title}}</footer>
+<footer class="text-center mt-5">@Copyright {{title}}</footer>

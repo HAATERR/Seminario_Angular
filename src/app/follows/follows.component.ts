@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { observable } from 'rxjs';
+import { PlayerDataService } from '../player-data.service';
+import { PlayerFollowsService } from '../player-follows.service';
+import { Player } from '../player-list/player';
 
 @Component({
   selector: 'app-follows',
@@ -6,10 +10,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./follows.component.scss']
 })
 export class FollowsComponent implements OnInit {
-
-  constructor() { }
+ 
+  followList: Player[] = [];
+  constructor(private follow: PlayerFollowsService,
+  ) {
+    follow.followList.subscribe(  f => this.followList = f );
+   }
 
   ngOnInit(): void {
+    
   }
 
 }

@@ -1,1 +1,7 @@
-<h3 class="shadow-sm p-3 mb-5 bg-body rounded mt-5">Jugadores que seguis</h3>
+<h5 class="shadow-sm p-3 mb-5 bg-body rounded mt-5 text-center">Jugadores que seguis</h5>
+
+<ul>
+    <li *ngFor="let player of followList">
+         {{player.name}}
+    </li>
+</ul>

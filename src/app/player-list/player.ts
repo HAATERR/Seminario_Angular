@@ -1,7 +1,7 @@
 export interface Player {
     name : string;
     image : string;
-    clearance : boolean;
+    follow : boolean;
     team : string;
     
 }

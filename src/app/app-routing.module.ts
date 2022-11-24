@@ -14,7 +14,7 @@ const routes: Routes = [
     component: BreweryPlayersComponent
   },
   {
-    path: 'follows',
+    path: 'history',
     component: BreweryFollowsComponent
   }
 ];
