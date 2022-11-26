@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { PlayerFollowsService } from '../player-follows.service';
+import { Player } from '../player-list/player';
 
 @Component({
   selector: 'app-brewery-follows',
@@ -6,8 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./brewery-follows.component.scss']
 })
 export class BreweryFollowsComponent implements OnInit {
-
-  constructor() { }
+  
+  
+  followList: Player[] = [];
+  constructor(private follow: PlayerFollowsService,) {
+    follow.followList.subscribe(  f => this.followList = f );
+   }
 
   ngOnInit(): void {
   }

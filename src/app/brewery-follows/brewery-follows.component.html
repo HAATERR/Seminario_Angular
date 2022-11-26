@@ -1,18 +1,9 @@
-
-
-<main class="justify-content-center text-center">
-    <h2 class="shadow-sm p-3 mb-5 bg-body rounded">Historia de la NBA</h2>
-    <p>La NBA nace en 1946 (llamada BAA hasta 1949) llamada como complemento del hockey sobre hielo, de modo que los dirigentes empiezan a ver el baloncesto como un deporte atractivo, capaz de competir con cualquier espectáculo y que se tornaba como el deporte perfecto para atraer al público mientras la liga de hockey atravesaba su descanso invernal. Esta idea surge tras el fracaso del baloncesto profesional estadounidense durante los años 30, carente de una estructura sólida de competición y de un calendario que mantuviera el orden, de modo que los equipos se hacían y deshacían con asiduidad y rapidez.
-
-        En 1937 se formó la NBL (National Basket League), competición que se movía por ciudades de segunda fila y que posteriormente se acabaría fusionando con la BAA.
-        
-        En junio de 1946, un grupo de propietarios de instalaciones deportivas y empresarios, encabezados por Max Kase, editor del New York Journal American, y Walter Brown, presidente del Boston Garden, fundaron la BAA (Basketball Association of America), compuesta por once franquicias que correspondían a los once miembros fundadores. Max Kase fue quien llevó la idea al propietario de la NHL, Walter Brown, quien a su vez se la pasó a Ned Irish para terminar aprobando la fundación de la liga.
-        
-        Los 11 equipos que abrieron el telón en la inaugural temporada 1946-47 fueron Boston Celtics, Philadelphia Warriors, New York Knicks, Washington Capitols, Providence Steamrollers, Toronto Huskies, Chicago Stags, St. Louis Bombers, Cleveland Rebels, Detroit Falcons y Pittsburgh Ironmen. Únicamente 3 equipos han perdurado hasta nuestros días: Boston Celtics, New York Knicks y Golden State Warriors.</p>
-        <p>Los Warriors ganan el primer título
-            La 1946-47 sería la primera temporada de la NBA, por entonces llamada BAA (Basketball Association of America), nombre que recibiría hasta 1949 después de que los equipos de la NBL (National Basketball League) se unificaran con los de la BAA. El primer entorchado de campeón correspondería a Philadelphia Warriors, liderados desde el banquillo por el legendario Eddie Gottlieb y en la cancha por Joe Fulks y Howie Dallmar vencieron a Chicago Stags en la final por un contundente 4-1. Fulks fue el máximo anotador de la temporada con 23.2 puntos mientras que Dallmar fue uno de los cuatro jugadores que pasaron de las 100 asistencias en la temporada y aquella final la pasó cojeando debido a un pie encallado pero aun así resultó decisivo en el 5 partido en el antiguo Philadelphia Arena.
-            
-            "Nadie esperaba que jugara", dijo Gottlieb, entrenador de los Warriors, que no puso de titular a Dallmar para que su pie descansara y se pudiera recuperar. Pero más allá de eso, Dallmar se sentó ahí en el banquillo, estuvo insistiendo a Gottlieb para que le dejara jugar y acabó resultando decisivo merced a una canasta ganadora. Con 80-80 en el marcador y con menos de un minuto por jugar, Howie Dallmar saltó a la pista y llevó a los Warriors al 83-80 final y al primer título. Fulks también fue determinante en ese quinto partido con 34 puntos.
-            
-            Todos los integrantes del equipo se llevaron 2.000 dólares y un anillo de campeón</p>
+<main class="d-flex justify-content-between">
+<div class="card" style="width: 18rem;" *ngFor="let player of followList">
+    <img [src]="player.image" [alt]= "player.name" class="card-img-top">
+    <div class="card-body">
+      <p class="card-text">{{player.name}}</p>
+      <small>Seguido</small>
+    </div>
+  </div>
 </main>

@@ -8,6 +8,7 @@ import { PlayerListComponent } from './player-list/player-list.component';
 import { FollowsComponent } from './follows/follows.component';
 import { BreweryPlayersComponent } from './brewery-players/brewery-players.component';
 import { BreweryFollowsComponent } from './brewery-follows/brewery-follows.component';
+import { BreweryHistoryComponent } from './brewery-history/brewery-history.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { BreweryFollowsComponent } from './brewery-follows/brewery-follows.compo
     PlayerListComponent,
     FollowsComponent,
     BreweryPlayersComponent,
-    BreweryFollowsComponent
+    BreweryFollowsComponent,
+    BreweryHistoryComponent
   ],
   imports: [
     BrowserModule,

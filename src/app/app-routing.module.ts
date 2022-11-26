@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { BreweryFollowsComponent } from './brewery-follows/brewery-follows.component';
+import { BreweryHistoryComponent } from './brewery-history/brewery-history.component';
 import { BreweryPlayersComponent } from './brewery-players/brewery-players.component';
 
 const routes: Routes = [
@@ -15,6 +16,10 @@ const routes: Routes = [
   },
   {
     path: 'history',
+    component: BreweryHistoryComponent
+  },
+  {
+    path: 'follows',
     component: BreweryFollowsComponent
   }
 ];

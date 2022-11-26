@@ -1,10 +1,10 @@
 <main class="justify-content-center">
   <div class="card mt-5 d-flex " style="width: 18rem;" *ngFor = "let player of players" [ngClass] = "{'follow' : player.follow}">
-      <img [src]="player.image" [alt]= "player.name" class="image" >
+      <img [src]="player.image" [alt]= "player.name" class="image">
       <div class="card-body text-center">
         <h5 class="card-title">{{player.name}}</h5>
         <p class="card-text">{{player.team}}.</p>
-        <button class="btn btn-primary" (click)="addFollow(player)" #asButton id="button">Seguir</button>
+        <button type="button" class="btn btn-primary" id="liveToastBtn" (click)="addFollow(player)">Seguir</button>
       </div>
   </div>
 </main>
