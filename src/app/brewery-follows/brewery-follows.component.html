@@ -1,5 +1,5 @@
-<main class="d-flex justify-content-between">
-<div class="card" style="width: 18rem;" *ngFor="let player of followList">
+<main class="d-flex justify-content-evenly">
+<div class="card" style="width:20rem;" *ngFor="let player of followList">
     <img [src]="player.image" [alt]= "player.name" class="card-img-top">
     <div class="card-body">
       <p class="card-text">{{player.name}}</p>
